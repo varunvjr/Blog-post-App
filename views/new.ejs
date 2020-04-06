@@ -7,12 +7,14 @@
 		<form class="ui form" method="POST" action="/blog">
 			<div class="ui huge labels">
 				<label class="ui label">Title</label>
-				<input type="text" name="blog[title]" placeholder="Enter the title">
+				<input type="text" name="blog[title]" placeholder="Enter the title" required>
 				<label class="ui label">Image</label>
-				<input type="text" name="blog[image]" placeholder="Enter the image url">
+				<input type="text" name="blog[image]" placeholder="Enter the image url" required>
 				<textarea name="blog[body]"></textarea>
 			</div>
 			<input class="ui blue basic button type" type="submit">
+			<button class="ui red basic button type"><a class="link" href="/blog">Back</a></button>
+
 		</form>
 	</div>
 </div>
